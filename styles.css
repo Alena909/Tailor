@@ -1,0 +1,264 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #333;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  margin: 0 auto;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Berkshire Swash", cursive;
+  font-size: 3.5em;
+  color: rgb(107, 172, 194);
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 4rem;
+}
+.lead {
+  color: rgba(214, 230, 235, 0.6);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: medium;
+}
+h2,
+h3,
+h4 {
+  font-family: "Berkshire Swash", cursive;
+  color: rgb(107, 172, 194);
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+#home {
+  background-image: url(images/tailoring-2575930_1920w.jpg);
+  background-size: cover;
+  height: 40vh;
+}
+
+hr {
+  margin-top: 0;
+  width: 200px;
+}
+
+.row {
+  width: 100%;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.about {
+  margin: auto 0;
+  padding: 0 2.5rem;
+}
+img {
+  width: 100%;
+  box-shadow: #333 5px 5px 10px;
+}
+img:hover {
+  transform: rotateY(360deg);
+  transition: transform 4s ease-in;
+}
+.about_img {
+  border: 7px solid white;
+}
+.about_us {
+  max-width: 60%;
+  margin: 3rem auto;
+}
+.form-row {
+  margin: 10px auto;
+  width: 90%;
+}
+.center {
+  max-width: 60%;
+  margin: 0 auto;
+}
+.center p {
+  padding-bottom: 2rem;
+}
+#services {
+  margin-top: 20px;
+  background-color: rgb(107, 172, 194);
+  color: #333;
+}
+#services h2 {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+#services h2,
+#services h3 {
+  color: #333;
+  margin-top: 2.5rem;
+  text-align: center;
+}
+.description p {
+  margin-bottom: 2rem;
+}
+.img_service {
+  border: 10px solid lightblue;
+  width: 50%;
+  margin: 0 auto;
+}
+#testimonials {
+  margin: 20px;
+}
+#testimonials h2 {
+  padding: 1.5rem;
+}
+.carousel_reviews {
+  height: 15.6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  border: lightgrey solid 2px;
+}
+.carousel {
+  padding: 0 20px;
+}
+
+.newsletter {
+  background-image: url(images/fashion-1031469_1920w1.jpg);
+  background-size: cover;
+  height: 40hv;
+  margin: 20px auto;
+}
+.newsletter h2 {
+  padding-top: 20px;
+}
+.newsletter p,
+.newsletter h2 {
+  color: lightblue;
+  background-color: rgba(70, 70, 70, 0.7);
+  padding: 20px;
+}
+#first_to_know {
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+#first_to_know input {
+  width: 70%;
+  display: inline;
+}
+.sign_up .btn {
+  margin-bottom: 8px;
+}
+address {
+  display: block;
+  font-style: italic;
+  line-height: 1.6rem;
+}
+.table {
+  max-width: 350px;
+  margin: 0 auto 2rem auto;
+}
+.table td {
+  padding: 3px;
+}
+#contact .btn {
+  margin: 7px;
+}
+.help {
+  width: 70%;
+  margin: 0 auto;
+}
+.help_descripition {
+  margin: auto 0;
+  padding: 0 40px;
+  width: 45%;
+}
+.help h4 {
+  padding: 1rem 0;
+}
+footer {
+  margin-top: 20px;
+  color: lightblue;
+  background-color: rgba(70, 70, 70, 0.8);
+  padding: 20px;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: yellow;
+}
+@media screen and (max-width: 800px) {
+  #services h3 {
+    font-size: large;
+  }
+}
+@media screen and (max-width: 640px) {
+  #home {
+    height: fit-content;
+  }
+  .lead {
+    color: white;
+    border: #333 solid 1px;
+    padding: 3px;
+    background-color: rgba(107, 172, 194, 0.5);
+    margin-top: 1rem;
+  }
+  .map {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+  }
+  .map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .carousel_reviews {
+    height: 100%;
+    padding: 20px;
+  }
+  .help_descripition {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 360px) {
+  #home {
+    height: fit-content;
+  }
+}
+
+#privacy_policy h1,
+#privacy_policy h2,
+#privacy_policy p {
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  margin: 2rem;
+  line-height: 1.5rem;
+}
+#privacy_policy {
+  background-color: lightblue;
+}
+#last_p {
+  padding-bottom: 2rem;
+  margin-bottom: 0 !important;
+}
+#privacy_footer {
+  margin-top: 0;
+}
